@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+/yarn.lock
+
+# development
+/dist
+/.vscode
+/.idea
+/.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
