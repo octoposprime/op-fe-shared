@@ -1,0 +1,14 @@
+{
+  "name": "op-fe-shared",
+  "version": "1.0.0",
+  "repository": "https://github.com/octoposprime/op-fe-shared.git",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "scripts": {
+    "test": "ts-node test.ts",
+    "build": "npx tsc"
+  }
+}
