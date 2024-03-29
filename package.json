@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "repository": "https://github.com/octoposprime/op-fe-shared.git",
   "license": "MIT",
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "trailingComma": "all"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
