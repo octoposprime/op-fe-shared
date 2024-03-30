@@ -1,8 +1,21 @@
-// src/auth.ts
-export function login(username: string, password: string): string {
+export async function login(
+  username: string,
+  password: string,
+): Promise<{
+  message: string;
+  tokens?: {refreshToken: string; accessToken: string};
+}> {
   if (username === 'op_admin' && password === 'opopopop') {
-    return 'The user has successfully logged in.';
+    return {
+      message: 'The user has successfully logged in.',
+      tokens: {
+        refreshToken: 'refreshTokenValue',
+        accessToken: 'accessTokenValue',
+      },
+    };
   } else {
-    return 'The username or password is incorrect.';
+    return {
+      message: 'The username or password is incorrect.',
+    };
   }
 }
